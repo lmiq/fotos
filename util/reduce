@@ -1,0 +1,6 @@
+#!/bin/csh
+#
+# Use convert to reduce an image to 640x480
+#
+convert -quality 90. -size 448x336 $1 -resize 448x336 $1
+#convert -quality 90. -size 1024x768 $1 -resize 1024x768 $1

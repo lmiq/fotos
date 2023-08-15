@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Reduz todas as fotos automaticamente.
+#
+#
+for file in `ls *.JPG`; do
+reduce $file
+done
+for file in `ls *.jpg`; do
+reduce $file
+done

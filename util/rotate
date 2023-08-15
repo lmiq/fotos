@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Use convert to rotate an image 90 degrees in horary sense by
+# default or the angle in the second argument
+#
+if [ -z $2 ]; then
+  rot=90
+else
+  rot=$2
+fi
+convert $1 -rotate $rot $1
